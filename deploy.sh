@@ -90,9 +90,9 @@ if [[ "$IN_PLACE_DEPLOYMENT" -ne "1" ]]; then
 fi
 
 # 2. Verify composer installed
-cd "$DEPLOYMENT_TARGET"
-hash php composer.phar 2>/dev/null
-exitWithMessageOnError "Missing composer executable"
+#cd "$DEPLOYMENT_TARGET"
+#hash php composer.phar 2>/dev/null
+#exitWithMessageOnError "Missing composer executable"
 
 # 3. Initialize Composer Config
 initializeDeploymentConfig
